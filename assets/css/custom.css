@@ -1,0 +1,40 @@
+/* =====================================================
+   GLASSMORPHIC HUGOBLOX NAVBAR
+===================================================== */
+
+#site-header.header {
+  background: rgba(255, 255, 255, 0.18) !important;
+
+  backdrop-filter: blur(20px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25) !important;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+
+  transition:
+    background-color 0.3s ease,
+    backdrop-filter 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Remove solid backgrounds from navbar children */
+#site-header.header > * {
+  background-color: transparent !important;
+}
+
+/* Navigation containers */
+#site-header .navbar,
+#site-header nav {
+  background-color: transparent !important;
+}
+
+/* Dark mode */
+.dark #site-header.header,
+[data-theme="dark"] #site-header.header {
+  background: rgba(17, 24, 39, 0.35) !important;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
